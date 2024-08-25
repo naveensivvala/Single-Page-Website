@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Single Page Website</title>
+    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <style>
+        .carousel-item img {
+            max-height: 100vh;
+            object-fit: cover;
+        }
+        .color-teal{
+            color:rgb(73, 88, 88);
+        }
+        .icon-lg{
+            font-size:50px;
+        }
+        .icon-sm{
+            font-size:25px;
+        }
+        .remove-bullets{
+            text-decoration:none;
+        } 
+        .remove-text-decoration{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand mr-auto">
+                    <img src="assets/logo1.jpg" height="90" alt="Brand Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Company</a>
+                                <a href="#" class="dropdown-item">Team</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="assets/img3.jpeg" class="d-block w-100" alt="carousel 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="assets/img2.jpeg" class="d-block w-100" alt="carousel 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="assets/img1.jpeg" class="d-block w-100" alt="carousel 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+</header>
+<main  class="m-5">
+    <section class="container m-6" id="about-us">
+       <h6 class="display-4 text-center">About Us</h6>
+       <div class="row">
+        <div class="col-md-5">
+            <div class="container">
+                <img src="assets/abt.jpg" class="d-block w-100" alt="About Us image">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <p class="text-black-50">
+                KeyCode is a leading provider of cutting-edge technological solutions, dedicated to revolutionizing the way businesses operate through innovation and expertise.
+            </p>
+            <p>
+                KeyCode is a pioneering technology company dedicated to transforming businesses through innovative solutions. Our mission is to empower companies with the tools they need to succeed in a rapidly evolving digital landscape. With a focus on cutting-edge technology and user-centric design, KeyCode is at the forefront of the tech industry, driving progress and fostering innovation. </p>
+        </div></div>
+       </div>
+       <h6 class="display-4 text-center">What Makes KeyCode Unique</h6>
+       <div class="row">
+         <div class="col-md-4">
+           <div class="container text-center">
+                 <span class="bi bi-person color-teal icon-lg"></span>
+                 <p>Personalized Solutions</p>
+           </div>
+         </div>
+         <div class="col-md-4">
+            <div class="container text-center">
+                <span class="bi bi-shield-shaded color-teal icon-lg"></span>
+                <p>Data Security and Privacy</p>
+          </div>
+         </div>
+         <div class="col-md-4">
+            <div class="container text-center">
+                <span class="bi bi-list color-teal icon-lg"></span>
+                <p>Flexible Integration Options</p>
+          </div>
+         </div>
+       </div>
+    </section>
+    <section id="team" class="container m-6">
+            <h6 class="display-4 text-center">Our Innovative KeyCode Team </h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width:300px;">
+                        <img src="assets/team1.jpeg" class="card-img-top">
+                        <div class="card-body text-center">
+                                <h4 class="card-title">Naveen Kumar</h4>
+                                <p class="card-text">
+                                    <p>Chief Technology Officer</p>
+                                    <p>Naveen leads our technology team with over a decade of experience in software development and technological innovation. His vision and expertise drive KeyCode’s technical advancements, ensuring we remain at the cutting edge of the industry.</p>
+                                    </p>
+                                    <i class="bi bi-facebook icon-sm m-2"></i>
+                                    <i class="bi bi-instagram icon-sm m-2"></i>
+                                    <i class="bi bi-linkedin icon-sm m-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:300px;">
+                        <img src="assets/team2.jpeg" class="card-img-top">
+                        <div class="card-body text-center">
+                                <h4 class="card-title">Indu Kumari</h4>
+                                <p class="card-text">
+                                    <p>Head of Development</p>
+                                    <p>Indu oversees all development projects at KeyCode, bringing a wealth of experience in project management and software engineering. Her commitment to quality and efficiency ensures that our solutions meet the highest standards.</p>
+                                    </p>
+                                    <i class="bi bi-facebook icon-sm m-2"></i>
+                                    <i class="bi bi-instagram icon-sm m-2"></i>
+                                    <i class="bi bi-linkedin icon-sm m-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width:300px;">
+                        <img src="assets/team3.jpeg" class="card-img-top">
+                        <div class="card-body text-center">
+                                <h4 class="card-title">Rohit chundru</h4>
+                                <p class="card-text">
+                                    <p>UX/UI Designer</p>
+                                    <p>Rohit is the creative force behind our user interfaces. With a keen eye for design and a deep understanding of user experience, she ensures our products are both functional and visually appealing, creating seamless interactions for our users.</p>
+                                    </p>
+                                    <i class="bi bi-facebook icon-sm m-2"></i>
+                                    <i class="bi bi-instagram icon-sm m-2"></i>
+                                    <i class="bi bi-linkedin icon-sm m-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contact" class="container m-6">
+       <h6 class="display-4 text-center p-3">Contact KeyCode</h6>
+       <div class="row">
+        <div class="col-md-6 p-2 mt-5" style="font-size: 20px;">
+            <div class="card shadow bg-dark p-5 text-light">
+                <h2 class="text-center">Contact Info</h2>
+                <div class="text-center">
+                    <p class="fs-3">Our Email:</p>
+                    <p class="fs-4">keycodesupport@gmail.com</p>
+                    <p class="fs-3">Our Phone No:</p>
+                    <p class="fs-4">+91 9065898563</p>
+                    <p class="fs-3">Our Address:</p>
+                    <p class="fs-4"> HighTech City, Hyderabad<br>Telangana 500081</p>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-6 p-3">
+                <div class="container"></div>
+                <p class="text-muted text-center fs-3">You can contact to our team</p>
+                <div class="container">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form id="form">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Enter Your Name</label>
+                                    <input type="text" class="form-control" name="name" id="name" required>
+                                    <span id="nameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Enter Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                    <span id="emailError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Enter The Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Enter Your Message</label>
+                                    <textarea class="form-control" name="message" id="message" required></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                   <input type="submit" class="btn btn-outline-dark" value="Send Message">
+                                   <span id="submitError"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+</main>
+<footer class="bg-dark">
+    <div class="container m-6">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="container m-5">
+                <img src="assets/logo1.jpg" height="50px;" class="bg-white">
+                <div>
+                    <p class="text-white">We would love to hear from you. Get in touch with us for any inquiries or support. Our team is here to assist you with any questions or needs you may have</p>
+    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container">
+                <p class="text-center text-white fs-6">Quick Links :</p>
+                <ul class="remove-bullets text-center remove-text-decoration">
+                    <li><a href='#' class="remove-text-decoration text-white">About Us</a></li>
+                    <li><a href='#' class="remove-text-decoration text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-white text-center">
+            <p>  © All rights reserved & copy; 2024, <a href="KeyCode.in">keycode</a></p>
+        </div>
+      </div>
+    </div>
+</footer>
+<script  src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
